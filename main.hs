@@ -1,3 +1,2 @@
 finalGrade :: [Int] -> [Int] -> Int
-finalGrade (x:xs) = x + finalGrade xs
-finalGrade q x xs
+finalGrade grade weight = (sum (zipWith (*) grade weight)) `div` (sum (weight))
